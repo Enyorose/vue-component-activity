@@ -1,26 +1,18 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <ImageCard :cardInfo="cardInfo" :img="cardImage" />
 </template>
 
-<script>
-import HelloWorld from './components/HelloWorld.vue'
+<script setup>
+import ImageCard from "./components/ImageCard.vue";
 
-export default {
-  name: 'App',
-  components: {
-    HelloWorld
-  }
-}
+const cardInfo = {
+  cardTitle: "Home for the winter",
+  cardText: "We made it back from arizona in a snow storm",
+};
+const cardImage = {
+  url: "https://images.unsplash.com/photo-1647533882992-c44e677b1cec?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1002&q=80",
+  alt: "This is a cool apartment building",
+};
 </script>
 
-<style lang="scss">
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
-</style>
+

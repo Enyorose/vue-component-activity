@@ -22,3 +22,6 @@ npm run lint
 
 ### Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).
+
+#### Asset Attributes
+- Photo of a [house](https://unsplash.com/photos/eKq-Jfyt0H8) by [Ricardo Gomez Angel](https://unsplash.com/@rgaleria)
