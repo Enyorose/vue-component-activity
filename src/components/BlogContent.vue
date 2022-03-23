@@ -1,15 +1,15 @@
 <template>
-  <div class="card-container">
+  <section>
+    <h1>{{ props.content.title }}</h1>
     <img :src="props.img.url" :alt="props.img.alt" />
-    <h1>{{ props.cardInfo.title }}</h1>
-    <p>{{ props.cardInfo.cardText }}</p>
-  </div>
+    <p>{{ props.content.text }}</p>
+  </section>
 </template>
 
 <script setup>
 import { defineProps } from "vue";
 const props = defineProps({
-  cardInfo: {
+  content: {
     type: Object,
   },
   img: {
@@ -23,10 +23,8 @@ img {
   margin: 0 auto;
   max-width: 100%;
 }
-.card-container {
+section {
   display: flex;
   flex-direction: column;
-  max-width: 30%;
-  justify-content: center;
 }
 </style>
